@@ -13,15 +13,16 @@ namespace Linkedlist
             //Console.WriteLine("Welcome to LinkedList");
 
             {
-                LinkedList<int> list = new LinkedList<int>();
-                list.AddLast(56);
-                list.AddLast(30);
-                list.AddLast(70);
+                //LinkedList<int> list = new LinkedList<int>();
+                //list.AddLast(56);
+                //list.AddLast(30);
+                //list.AddLast(70);
+
 
                 CustomLinkedList customLinkedList = new CustomLinkedList();
-                customLinkedList.InsertLast(56);
-                customLinkedList.InsertLast(30);
-                customLinkedList.InsertLast(70);
+                customLinkedList.InsertFront(70);
+                customLinkedList.InsertFront(30);
+                customLinkedList.InsertFront(56);
                 customLinkedList.Display();
                 Console.ReadLine();
             }
