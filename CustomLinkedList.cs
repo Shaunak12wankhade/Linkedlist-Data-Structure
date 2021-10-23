@@ -91,7 +91,7 @@ namespace Linkedlist
             return deleteNode;
         }
 
-        //method to delete first node
+        //method to delete last node
         public int DeleteLastNode()
         {
             Node newNode = this.head;
@@ -112,6 +112,22 @@ namespace Linkedlist
             int lastDeletedNode = newNode.next.data;
             newNode.next = null;
             return lastDeletedNode;
+        }
+
+        //method to find a node in a linked list
+        public int Find(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nNode is present ");
+                    return value;
+                }
+                temp = temp.next;
+            }
+            return value;
         }
 
         //method for displaying elements in linked list
