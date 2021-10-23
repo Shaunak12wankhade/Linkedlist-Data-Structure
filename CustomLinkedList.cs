@@ -79,6 +79,18 @@ namespace Linkedlist
             pos.next = new_node;
         }
 
+        //method to delete first node
+        public int DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return 0;
+            }
+            int deleteNode = this.head.data;
+            this.head = this.head.next;
+            return deleteNode;
+        }
+
         //method for displaying elements in linked list
         public void Display()
         {
